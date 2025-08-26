@@ -12,5 +12,41 @@ Patient Side
   - View status of booked appointments.
 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Admin Side
+
+- Secure Admin login.
+
+- Dashboard to view & manage appointments (approve, reject, pending).
+
+- Manage doctors:
+
+- Add new doctor (with profile picture via Cloudinary).
+
+- Manage admins: add new admin profiles.
+
+- View all messages sent by patients.
+
+### Tech Stack
+
+#### Frontend:
+
+- Vite + React
+
+#### Backend:
+
+- Node.js + Express.js (REST API)
+
+- JWT Authentication (separate tokens for patient & admin)
+
+#### Database & Storage:
+
+- MongoDB (flexible schema for users, appointments, messages)
+
+- Cloudinary (for storing doctor images)
+
+### Authentication
+
+- Separate JWT tokens for Patient and Admin authorization.
+
+- Protected routes for sensitive operations like adding doctors/admins.
+
